@@ -12,12 +12,12 @@ public class ConfigReader {
 
     // 2- Bu class'in amaci configuration.properties dosyasini okumak
     //    ve oraadaki key value ikililerini kullanarak istedigimiz key'e ait value'yu bize getirmek
-
+    //
     static {
-        String dosyaYolu = "configuration.properties";
+        String dosyaYolu="configuration.properties";
         try {
-            FileInputStream fileInputStream = new FileInputStream(dosyaYolu);
-            properties = new Properties();
+            FileInputStream fileInputStream=new FileInputStream(dosyaYolu);
+            properties=new Properties();
             properties.load(fileInputStream);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -28,9 +28,9 @@ public class ConfigReader {
 
     // 3- test class'larindan configReader class'ina ulasip yukaridaki islemleri
     //    yapmamizi saglayacak bir method olusturacagiz
-    public static String getProperty(String key) {
+    public static String getProperty(String key){
 
-        String value = properties.getProperty(key);
+        String value=properties.getProperty(key);
         return value;
     }
 }

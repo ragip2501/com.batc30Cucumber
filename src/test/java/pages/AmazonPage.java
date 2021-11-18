@@ -1,6 +1,5 @@
 package pages;
 
-import org.junit.Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,4 +16,6 @@ public class AmazonPage {
 
     @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
     public WebElement sonucYazisiElementi;
+
+
 }

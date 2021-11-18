@@ -1,4 +1,5 @@
 package utilities;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,7 +15,7 @@ public class Driver {
 
     }
 
-    private static WebDriver driver;
+   private static WebDriver driver;
     // driver'i baska class'lardan sadece Driver class ismi ile cagirabilmek icin STATIC yaptik
     // henuz bu driver ile ilgili ayarlar yapmadigim icin baska class'lar bunu yanlislikla kullanmasin diye
     // erisimi private yaptik (sadece bu class'in kullanimina acik yaptik)
